@@ -18,7 +18,7 @@ all:
 	git clone https://github.com/joq62/vm_service.git;	
 	cp vm_service/src/*.app vm_service/ebin;
 	erlc -I include -o vm_service/ebin vm_service/src/*.erl;
-	erl -pa */ebin -config varmdo_1.config -s vm_service boot -sname varmdo_1
+	erl -pa */ebin -config varmdo_1.config -s vm_service boot -sname varmdo_1 -setcookie abc
 clean:
 	rm -rf node_setup;
 	git clone https://github.com/joq62/node_setup.git
