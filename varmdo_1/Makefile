@@ -19,3 +19,6 @@ all:
 	cp vm_service/src/*.app vm_service/ebin;
 	erlc -I include -o vm_service/ebin vm_service/src/*.erl;
 	erl -pa */ebin -config varmdo_1.config -s vm_service boot -sname varmdo_1
+clean:
+	rm -rf node_setup;
+	git clone https://github.com/joq62/configs.git

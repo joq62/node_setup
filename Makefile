@@ -20,4 +20,5 @@ all:
 	erlc -I include -o vm_service/ebin vm_service/src/*.erl;
 	erl -pa */ebin -config change_name.config -s vm_service boot -sname node_name
 clean:
-	rm -rf include configs *_service *~ */*~ erl_crasch.dump;
+	rm -rf node_setup;
+	git clone https://github.com/joq62/configs.git
