@@ -19,3 +19,5 @@ all:
 	cp vm_service/src/*.app vm_service/ebin;
 	erlc -I include -o vm_service/ebin vm_service/src/*.erl;
 	erl -pa */ebin -config change_name.config -s vm_service boot -sname node_name
+clean:
+	rm -rf include configs *_service *~ */*~ erl_crasch.dump;
