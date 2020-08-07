@@ -21,4 +21,4 @@ all:
 	erl -pa */ebin -config change_name.config -s vm_service boot -sname node_name
 clean:
 	rm -rf node_setup;
-	git clone https://github.com/joq62/configs.git
+	git clone https://github.com/joq62/node_setup.git
